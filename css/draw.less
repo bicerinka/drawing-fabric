@@ -1,0 +1,105 @@
+@import url(less/vars.less);
+@col-button: #D1FF10;
+.about-draw
+{
+  margin-bottom: 30px;
+}
+.draw
+{
+  max-width: 510px;
+  margin-top: 15px;
+}
+.image-button
+{
+  border: none;
+  cursor: pointer;
+  vertical-align: middle;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  outline: none;
+}
+.canvas-buttons
+{
+  max-width: 150px;
+  .clear
+  {
+    border: 1px solid orange;
+    padding: 10px 20px;
+    margin: 10px 0 20px 0;
+    border-radius: 6px;
+  }
+}
+
+.btn-default
+{
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 6px;
+  border-color: darken(@col-button, 12%);
+  background-color: #f9f1f8;
+
+  &:hover, &:focus, &:active, &:active:hover, &:active:focus
+  {
+    background-color: @col-button;
+    border-color: darken(@col-button, 12%);
+    outline: none;
+  }
+}
+.current, .current:focus, .current:active, .current:hover
+{
+  background-color: @col-button;
+  border-color: darken(@col-button, 18%);
+  outline: none;
+}
+.scheme
+{
+  margin-right: 9px;
+  margin-bottom: 20px;
+}
+// выбор толщины линии
+.slider.slider-horizontal {
+  width: 300px;
+  margin-bottom: 20px;
+}
+.slider.slider-horizontal .slider-handle {
+  margin-top: -10px;
+}
+.slider-handle {
+  width: 30px;
+  height: 30px;
+  background-color: #D1FF10;
+  background-image: -webkit-linear-gradient(top, #D1FF10 0%, darken(@col-button, 12%) 100%);
+  background-image: -o-linear-gradient(top, #D1FF10 0%, darken(@col-button, 12%) 100%);
+  background-image: linear-gradient(to bottom, #D1FF10 0%, darken(@col-button, 12%) 100%);
+}
+.well {
+  max-width: 350px;
+  padding: 40px 19px 19px;
+  background-color: #fff;
+  border: 1px solid #A9D200;
+  border-radius: 6px;
+  margin-top: 30px;
+}
+.slider .tooltip.top {
+  margin-top: -40px;
+}
+.tooltip-inner {
+  margin-left: 12px;
+}
+.tooltip.top .tooltip-arrow {
+  margin-left: 0;
+}
+.slider-selection {
+  background-image: -webkit-linear-gradient(top, lighten(@col-button, 23%) 0%, lighten(@col-button, 30%) 100%);
+  background-image: -o-linear-gradient(top, lighten(@col-button, 23%) 0%, lighten(@col-button, 30%) 100%);
+  background-image: linear-gradient(to bottom, lighten(@col-button, 23%) 0%, lighten(@col-button, 30%) 100%);
+}
+// выбор выбор толщины линии
+
+// инструменты для рисования
+.tools
+{
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
